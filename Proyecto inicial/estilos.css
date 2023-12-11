@@ -1,0 +1,377 @@
+/* Esablezco parámetros para el cuerpo de mi página (fuente,color,margenes..)*/
+body {
+    margin: 0; /* quita los márgenes de la página ( efecto como pantalla completa?)*/
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 14px; /* Tamaño de la letra del body*/
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Clases de contenedores de colores para generar espacios en mi web*/
+
+.background-container-ipear-titanium {
+    position: relative;
+    width: 100%;
+    height: 900px; 
+    background: url('Multimedia/fondo_movil.png') no-repeat center center; /* En vez de fondo de color , le pongo un fondo de imagen al contenenedor*/
+    background-size: cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.background-container-ipear-azul {
+    position: relative;
+    width: 100%;
+    height: 300px; 
+    background: url('Multimedia/ipear_azul.PNG') no-repeat center center; /* En vez de fondo de color , le pongo un fondo de imagen al contenenedor*/
+    background-size: cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.background-container-ipear-black-titanium {
+    position: relative;
+    width: 100%;
+    height: 1200px; 
+    background: url('Multimedia/movil_titanium.png') no-repeat center center; /* En vez de fondo de color , le pongo un fondo de imagen al contenenedor*/
+    background-size: cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.background-container-blanco {
+    position: relative; 
+    width: 100%;
+    height: 120px; 
+    background-color: white;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-container-blanco-2 {
+    position: relative; 
+    width: 100%;
+    height: 550px; 
+    background-color: white;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}   
+
+.background-container-gris-claro-nav {
+    position: relative; 
+    width: 100%;
+    height: 40px; /* Altura del contenedor */
+    background-color:   rgb(240, 239, 239); /* Color del contenedor */
+    background-size: cover;
+    color: rgb(67, 67, 67); /* Color de la letra de los textos que ponga en el contenedor */
+    text-align: center;
+    display: flex;
+    align-items: center; /* Me alinea los elementos al centro del bloque */
+    justify-content: center; /* Me alinea los textos al centro del bloque*/
+}
+
+.background-container-mantenimiento {
+    margin-top:50px;
+    position: relative; 
+    width: 100%;
+    height: 40px; /* Altura del contenedor */
+    background-size: cover;
+    color: rgb(67, 67, 67); /* Color de la letra de los textos que ponga en el contenedor */
+    text-align: center;
+    display: flex;
+    align-items: center; /* Me alinea los elementos al centro del bloque */
+    justify-content: center; /* Me alinea los textos al centro del bloque*/
+}
+
+.background-container-gris-claro-texto {
+    position: relative; 
+    width: 100%;
+    height: 50px; 
+    background-color:   rgb(240, 239, 239);
+    background-size: cover;
+    color: rgb(67, 67, 67);
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.background-container-negro {
+    position: relative; 
+    width: 100%;
+    height: 60px; 
+    background-color:   rgb(0, 0, 0);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-container-negro2 {
+    position: relative; 
+    width: 100%;
+    height: 800px; 
+    background-color:   rgb(0, 0, 0);
+    background-size: cover;
+    display: flex;
+    color:white;
+    justify-content: center;
+    
+}
+
+/* Clase que asegura que el título esté por encima de la imagen de fondo/ color fondo , pero de color naranja */
+
+#texto_naranja {
+    z-index: 1;
+    font-size: 14px;
+    color:	#FF4500
+}
+
+#texto_info_compra{
+    color:white;
+    font-size:20px;
+}
+
+/* ID que asegura que el título esté por encima de la imagen de fondo/ color fondo , pero de color gris*/
+
+#texto_ipear {
+    z-index: 1;
+    font-size: 28px;
+    color:rgb(192, 191, 191);
+}
+
+
+/* Clase que asegura que el título esté por encima de la imagen de fondo/ color fondo */
+.texto_encima {
+    z-index: 1;
+}
+
+.nave {
+    z-index: 1; /* Asegura que el texto se vea sobre el bloque gris del nav*/
+    margin-left: 30px; /* Genero un espacio entre los enlaces del nav*/
+    text-decoration: none; /* quito la decoración del enlace (la línea de debajo) */
+}
+
+/* Hace que los enlaces del nav cambien ligeramente de color al pasar el ratón por encima*/
+
+a:hover{
+    color:rgb(64, 64, 64);
+}
+
+/* Clase para poner el boton azúl con los bordes en circulo , colores y otros parámetros.*/
+
+.boton-compra {
+    padding: 8px 18px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0995f2;
+    border: none;
+    border-radius: 20px 20px 20px 20px;
+    cursor: pointer; /* Cambia el cursos al poner el ratón encima */
+    transition: background-color 0.3s ease; /* transiciona a un color mas oscuro al pasar el ratón por encima */
+    margin-bottom: 15px;
+}
+
+/* El color de después la transición */
+
+.boton-compra:hover {
+    background-color: #049fe6;
+}
+
+/* Enlace learn more , colores , parámetros generales.. */
+
+#enlace_learn_more{
+    text-decoration: none;
+    color: #049fe6;
+    font-size:20px;
+}
+
+/* Enlace learn more al pasar el ratón por encima aparece la línea debajo del texto */
+
+#enlace_learn_more:hover{
+    text-decoration: underline;
+}
+
+/* Clase para el texto sobre la cámara del ipear azul*/
+
+.texto-ipear-azul{
+    font-size:70px;
+    color: rgb(33, 33, 33);
+    margin-top:50px;
+    font-weight: bold;
+    white-space: pre-line; /* Me permite hacer salto de línea sin usar nuevas etiquetas*/
+}
+
+/* Clase para el texto sobre el mapa y otras páginas*/
+
+.texto-generico{
+    font-size:70px;
+    color: rgb(255, 255, 255);
+    margin-top:30px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* ID para el texto sobre la delgadez del modelo titanium*/
+
+#texto-ipear-negro{
+    font-size:70px;
+    color: rgb(255, 255, 255);
+    margin-top:20px;
+    font-weight: bold;
+    white-space: pre-line; /* Me permite hacer salto de línea sin usar nuevas etiquetas*/
+}
+
+/* Clase para el texto de about, contando sobre la compañía*/
+
+.texto-about{
+    font-size:20px;
+    color: rgb(255, 255, 255);
+    margin-top:20px;
+    white-space: pre-line; /* Me permite hacer salto de línea sin usar nuevas etiquetas*/
+    justify-content: left;
+    align-items: left;
+    padding: 20px;
+    position: relative;
+}
+
+/* ID para el texto sobre el copyright , que se quitará en la versión de móvil*/
+
+#texto-copyright{
+    font-size:14px;
+    color: rgb(122, 120, 120);
+    margin-left:200px;
+    margin-right: 200px;
+    margin-top:100px;
+    white-space: pre-line; /* Me permite hacer salto de línea sin usar nuevas etiquetas*/
+    text-align: justify;
+    display: block;
+}
+
+/* Le quito la decoración a los enlaces del footer y le pongo margen entre ellos */
+
+.nave2 {
+    margin-left: 30px; 
+    text-decoration: none; 
+}
+
+/* Añado la línea debajo del texto al poner el click por encima*/
+
+.nave2:hover{
+    text-decoration:underline
+}
+
+/* Parámetros del footer */
+footer {
+    padding: 20px; 
+    text-align:center;
+}
+
+/* Línea horizontal para comenzar el apartado de enlaces del footer */
+
+hr {
+    width: 75%; /* Ajusta el ancho de la línea horizontal */
+    border: 1px solid #ccc; /* Establece un borde y un color para la línea */
+    margin: 10px auto; /* Centra la línea horizontal dentro del pie de página */
+    text-align:center;
+    text-decoration: underline;
+    margin-top:100px;
+    color:#ccc ;
+}
+
+/* Clase para quitar el contenido de escritorio en la versión de móvil*/
+
+.desktop-only{
+    display:block;
+}
+
+/* Estilo para el contenedor del mapa */
+#map-container {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    filter: grayscale(100%); /* Aplica el filtro de blanco y negro */
+}
+
+/* Estilo para el iframe del mapa */
+#map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    transition: filter 0.3s ease; /* Agrega una transición para suavizar el cambio */
+}
+/* Todo el contenido que adapto para la versión de móvil*/
+
+
+@media only screen and (max-width: 768px) {
+    #texto-copyright {
+        display: none;
+    }
+    .texto-generico{
+        font-size:40px;
+        color: rgb(255, 255, 255);
+        margin-top:30px;
+        font-weight: bold;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .desktop-only{
+        display:none
+    }
+    .version-movil{
+        font-size:12px;
+        padding:10px;
+    }
+    .texto-ipear-azul{
+        font-size:48px;
+        font-weight: bold;
+        margin-top:20px;       
+    }
+    .background-container-ipear-black-titanium {
+        position: relative;
+        width: 100%;
+        height: 600px; 
+        background: url('Multimedia/movil_titanium2.png') no-repeat center center; /* En vez de fondo de color , le pongo un fondo de imagen al contenenedor*/
+        background-size: cover;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        border:none;
+    }
+    #texto-ipear-negro{
+        font-size:50px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        white-space: pre-line; /* Me permite hacer salto de línea sin usar nuevas etiquetas*/
+        justify-content: center;
+        text-align: center;
+    }
+    #texto-mapa{
+        font-size:50px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        display: flex;
+    }
+}
+
+
